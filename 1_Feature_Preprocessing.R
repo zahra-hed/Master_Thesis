@@ -37,7 +37,7 @@ library(dplyr)
 library(stringr)
 library(purrr)
 
-setwd("C:/Users/kosai/Desktop/school/ppmi/dataset/features")
+setwd("D:/Masters/thesis/Implementation/PPMI_DAHS/dataset/features")
 
 #call features
 temp = list.files() 
@@ -149,7 +149,7 @@ patients <- patients %>% filter(PATNO %in% unlist(distinct(main_df['PATNO'])))
 # export the final dataframe
 #
 
-setwd("C:/Users/kosai/Desktop/school/ppmi/dataset")
+setwd("D:/Masters/thesis/Implementation/PPMI_DAHS/dataset/generated_data/feature_preprocessing")
 write.csv(main_df, file = "main_df.csv")
 write.csv(patients, file = 'patients.csv')
 
